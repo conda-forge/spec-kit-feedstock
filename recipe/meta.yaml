@@ -18,7 +18,7 @@ build:
   script_env:
     - PYTHONIOENCODING=utf8
     - PYTHONUTF8=1
-  number: 0
+  number: 1
 
 requirements:
   host:
