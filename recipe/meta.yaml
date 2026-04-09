@@ -1,5 +1,5 @@
 {% set name = "spec-kit" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/github/spec-kit/archive/v{{ version }}.tar.gz
-  sha256: 71873d247385e9b3175340c34330fce50b46e3648f0bf11d51e48eef592ad9f7
+  sha256: c89333f217dd488aff879951514e4bd8c8a464d1d79640017464dcc0ed079a74
 
 build:
   entry_points:
@@ -28,9 +28,9 @@ requirements:
   run:
     - json5 >=0.13.0
     - pathspec >=0.12.0
-    - click >=8.1
+    - click >=8.2.1
     - python >={{ python_min }},<4.0
-    - typer
+    - typer >=0.24.0
     - rich
     - httpx
     # https://github.com/encode/httpx/blob/master/pyproject.toml#L51
