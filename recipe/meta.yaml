@@ -1,5 +1,5 @@
 {% set name = "spec-kit" %}
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/github/spec-kit/archive/v{{ version }}.tar.gz
-  sha256: bb2031b795c45ea3b833e09086bbe885f372ffd83dbb5f3eff7be777c82f8dad
+  sha256: fa41e31a5756f8691b1fdcaa8a31fb96a9cf1810109080dcf7af4d4203c5a46b
 
 build:
   entry_points:
