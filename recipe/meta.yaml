@@ -1,5 +1,5 @@
 {% set name = "spec-kit" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/github/spec-kit/archive/v{{ version }}.tar.gz
-  sha256: e39dc9db2155ab2c987a9ee892428222a44fa263bee5025d4bcceb223f3c078c
+  sha256: 78de808682e969684f2448ab3c3eba4e48b2b748ab28bb64fe821844bd849b13
 
 build:
   entry_points:
@@ -26,6 +26,8 @@ requirements:
     - hatchling
     - pip
   run:
+    - mcp >=2.2.0,<3.0.0
+    - pydantic >=2.13.0,<3.0.0
     - json5 >=0.13.0
     - pathspec >=0.12.0
     - click >=8.2.1
